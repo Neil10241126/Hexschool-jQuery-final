@@ -105,7 +105,7 @@ a{text-decoration: none;color: black;}
 }
 
 .header h1 a{
-  background-image: url(/img/logo.png);
+  background-image: url(../img/logo.png);
   width: 224px;
   height: 50px;
   display: block;
@@ -170,7 +170,7 @@ a{text-decoration: none;color: black;}
 }
 
 .banner{
-  background-image: url(/img/banner.png);
+  background-image: url(../img/banner.png);
 }
 
 .banner h2{
@@ -183,11 +183,11 @@ a{text-decoration: none;color: black;}
 }
 
 .up{
-  background-image: url(/img/up.jpg);
+  background-image: url(../img/up.jpg);
 }
 
 .toystory{
-  background-image: url(/img/toystory.jpg);
+  background-image: url(../img/toystory.jpg);
 }
 
 /* /lightbox2燈箱效果 */

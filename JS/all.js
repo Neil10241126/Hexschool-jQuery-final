@@ -18,10 +18,11 @@ $(document).ready(function(){
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 500,
+    speed: 300,
     effect: 'flip',
     autoplay:{
       delay: 4000,
+      disableOnInteraction: false,
     },
   
     // If we need pagination
