@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 最終作業</title>
+  <!-- css樣式載入 -->
+  <link rel="stylesheet" href="/CSS/swiper-bundle.css">
+  <!-- <link rel="stylesheet" href="/CSS/lightbox.min.css"> --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <!-- js套件載入 -->
+  <script src="/JS/jquery-3.6.0.min.js"></script>
+  <script src="/JS/swiper-bundle.min.js"></script>
+  <script src="/JS/lightbox.min.js"></script>
+  <script src="/JS/all.js"></script>
+</head>
+<body>
+  <div class="wrap">   
+    <a href="#" class="top"><i class="fas fa-arrow-circle-up fa-4x"></i></a> 
+
+    <ul class="nav-bar flex">
+      <li><a href="#" class="a-facebook"><i class="fa-brands fa-facebook-square"></i>粉絲團</a></li>
+      <li><a href="#" class="a-twitter"><i class="fa-brands fa-twitter"></i>追隨我們</a></li>
+    </ul>
+
+    <div class="header flex">
+      <h1><a href="#">Hex School</a></h1>
+      <ul class="menu flex">
+        <li><a href="#">首頁</a></li>
+        <li>
+          <a href="#" class="dropdown">產品介紹<i class="fa-solid fa-circle-down"></i></a>
+          <ul class="dropdown-open">
+            <li><a href="#">網頁設計<i class="fa-solid fa-angles-right"></i></a></li>
+            <li><a href="#">前端開發<i class="fa-solid fa-angles-right"></i></a></li>
+            <li><a href="#">後端開發<i class="fa-solid fa-angles-right"></i></a></li>
+            <li><a href="#">全端開發<i class="fa-solid fa-angles-right"></i></a></li>
+          </ul>
+        </li>
+        <li><a href="#">聯絡我們</a></li>
+      </ul>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide banner">
+          <h2>六角學院 <br>讓你奠定良好的前端基礎</h2>
+        </div>
+        <div class="swiper-slide up">
+        </div>
+        <div class="swiper-slide toystory">
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <ul class="intro flex">
+      <li>
+        <a href="/img/toystory.jpg" class="flex" data-lightbox="group">
+          <div class="item flex"><img src="/img/html.png" alt="HTML"></div>
+          <h3>Html 5 基礎教學</h3>
+          <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的案例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+        </a>
+      </li>
+      <li>
+        <a href="/img/up.jpg" class="flex" data-lightbox="group">
+          <div class="item flex"><img src="/img/rwd.png" alt="HTML"></div>
+          <h3>響應式網站設計</h3>
+          <p>響應式網站設計（Responsive web design），目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+        </a>
+      </li>
+      <li>
+        <a href="/img/walle.jpg" class="flex" data-lightbox="group">
+          <div class="item flex"><img src="/img/jQuery.png" alt="HTML"></div>
+          <h3>jQuery實戰教學</h3>
+          <p>本課程有以下特色</p>
+          <ol>
+            <li>瞭解變數的使用方法</li>
+            <li>學習並操作DOM</li>
+            <li>學習基本數學運算方法</li>
+            <li>套件的操作及運用</li>
+          </ol>
+        </a>
+      </li>
+    </ul>
+
+    <div class="course">
+      <h3>線上及實體課程的差異</h3>
+      <table>
+        <tr class="style-bg">
+          <th>項目</th>
+          <th>Hex School 線上課程</th>
+          <th>一般線上課程</th>
+          <th>實體課程</th>
+        </tr>
+        <tr>
+          <td>費用</td>
+          <td class="style">較低</td>
+          <td class="style">較低</td>
+          <td>較高</td>
+        </tr>
+        <tr>
+          <td>學習效果</td>
+          <td>一般</td>
+          <td>較低</td>
+          <td class="style">很好</td>
+        </tr>
+        <tr>
+          <td>Code review</td>
+          <td class="style">有</td>
+          <td>無</td>
+          <td>不一定</td>
+        </tr>
+        <tr>
+          <td>課程更新速度</td>
+          <td class="style">普通</td>
+          <td class="style">普通</td>
+          <td>較慢</td>
+        </tr>
+        <tr>
+          <td>多次複習</td>
+          <td class="style">可</td>
+          <td>可</td>
+          <td>不可</td>
+        </tr>
+        <tr>
+          <td>字幕</td>
+          <td class="style">有</td>
+          <td>不一定</td>
+          <td>板書</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="information">
+      <h3>對我們課程有興趣嗎? <br>歡迎留下您的資料</h3>
+      <form action="#" class="flex">
+        <textarea name="" id="" cols="60" rows="15"></textarea>
+        <ul class="infor-container flex">
+          <li class="items flex">
+            <label for="name">姓名</label>
+            <input type="text" name="name" id="name" placeholder="六角講師">
+          </li>
+          <li class="items flex">
+            <label for="tel">電話</label>
+            <input type="text" name="tel" id="tel" placeholder="0912345678">
+          </li>
+          <li class="items flex">
+            <label for="mail">信箱</label>
+            <input type="text" name="mail" id="mail" placeholder="hexschool@gmail.com">
+          </li>
+          <button>送出</button>
+        </ul>
+      </form>
+    </div>
+
+    <div class="footer flex">
+      <img src="/img/footerLogo.png" alt="logo">
+      <ul>
+        <li>聯絡我們:<a href="hexschool@gmail.com">hexschool@gmail.com</a></li>
+        <li>電話:<a href="0912345678">0912345678</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
